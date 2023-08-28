@@ -1,0 +1,205 @@
+/* bara de navegacion */
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 0 1rem 0 1rem;
+    background-color: rgb(223, 223, 223);
+    font-weight: bold;
+}
+
+.navbar .nav-item .nav-link{
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Audiowide', cursive;}
+
+.seccion-oscura {
+    background-color: #141414;
+    color: white;
+}
+
+.seccion-clara {
+    background-color: white;
+    color: black;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+/* Sección hero */
+.hero {
+    background-image: url(img/fondo-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    text-align: center;
+}
+
+/* .hero-principal {
+    padding: 3rem;
+} */
+
+.hero-imagen-de-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    filter: drop-shadow(8px 8px 10px rgb(255, 255, 255));
+}
+
+.hero-principal h1 {
+    color: white;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 4px black;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Sección Quienes somos */
+.quienes-somos {
+    height: 400px;
+    padding: 10px;
+}
+
+.quienes-somos .contenedor {
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Sección rubros */
+.rubros {
+    padding: 40px 40px 60px 40px;
+}
+
+.rubros .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    transition: all 0.2s ease-in;
+}
+
+.rubros .columna:hover {
+    color: white;
+    background-color: #141414;
+
+}
+
+.rubros i {
+    font-size: 2.5rem;
+    color: #ffed00;
+    background-color: #141414;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.rubro-titulo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bagges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+    align-items: end;
+}
+
+.table th {
+    color: #ffed00;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 230px;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto1 {
+    font-size: 2.5rem;
+    font-family: 'Audiowide', cursive;}
+
+.footer-texto2 {
+    font-size: 1.5rem;
+}
+
+.iconos-redes i {
+    margin: 0 5px 0 10px;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.productos {
+    margin-bottom: 10px;
+}
+
+.foto {
+    padding-top: 10px;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* Responsivo */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-inferior-imagen {
+        max-width: 1024px;
+    }
+}
+    
